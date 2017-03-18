@@ -7,7 +7,7 @@ int stepperPin = 9;
 int microStep2 = 4; 
 int microStep = 11;
 //LED infrarouge
-int pinLED=1;
+int pinLED=2;
 
 
 void setup() {
