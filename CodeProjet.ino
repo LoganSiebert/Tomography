@@ -34,8 +34,7 @@ void step(boolean dir, int steps, int stepNumber, int dirNumber ) {
 }
 
 void loop() {
-  Serial.println(analogRead(A5));
-  for(int j = 1; j<37; j+=2){
+  for(int j = 0; j<39; j+=2){
      for (int i=0; i<1600; i+=16){
         step(true,16,stepperPin, dirPin);
         digitalWrite(pinLED, HIGH);
