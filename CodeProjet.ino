@@ -55,7 +55,7 @@ void loop() {
       }
       
       //Rotation moteur 2 de 160 pas (360 degrés = 6400 pas avec microstepping)
-      step(true, 160, stepperPin2, dirPin2);
+      step(true, 80, stepperPin2, dirPin2);
       
       for (int i=0; i<1600; i+=16){
          step(false,16,stepperPin, dirPin); //sens inverse
@@ -65,7 +65,7 @@ void loop() {
          digitalWrite(pinLED, LOW);
       }
       
-      step(true, 160, stepperPin2, dirPin2);
+      step(true, 80, stepperPin2, dirPin2);
   }
    Serial.println(-10); //Arrêt de réception
 }
